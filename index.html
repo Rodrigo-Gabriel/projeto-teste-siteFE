@@ -8,15 +8,18 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<!-- CSS media query em um elemento de link -->
+		<link rel="stylesheet" media="(max-width: 800px)" href="./mediaQ.css" />
+
 	</head>
 
 	<body>
 		<header>
 				<img class="logo" src="./public/logo-fe.jpg">
 
-				<nav>
+				<nav class="nav-bar">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Inicio</a></li>
 						<li><a href="produtos.html">Produtos</a></li>
 						<li><a href="contato.html">Contato</a></li>
 					</ul>
@@ -32,48 +35,49 @@
 		<main>
 			<section class="principal">
 				<h2 class="titulo-principal">Sobre a FE-etiquetas</h2>
-
-				<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro.">
 		 
 				<p>Localizada no coração da cidade a <strong>FE-etiquetas</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
 				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar qualidade aos nossos clientes"</strong>.</em></p>
 
 				<p>Oferecemos produtos de qualidade e confiança. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+				<img class="utensilios" src="./public/imagem-de-fundo-4-fe.jpg" alt="peças.">
 			</section>
 
 			<section class="mapa">
-				<h3 class="titulo-principal">Nossa fàbrica</h3>
-				<p>Nosso fàbrica está localizado em Fortaleza.</p>
+				<h3 class="titulo-principal">Nossa fábrica</h3>
+				<p>Nossa fábrica está localizado em Fortaleza.</p>
 
 				<div class="mapa-conteudo">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.807346491085!2d-38.599167821587905!3d-3.829610717021844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c752764f0b16c3%3A0xaa130c34c3a0c798!2sR.%20Ant%C3%B4nio%20Chacon%2C%20281%20-%20Parque%20Pres.%20Vargas%2C%20Fortaleza%20-%20CE%2C%2060765-555!5e0!3m2!1spt-BR!2sbr!4v1721155975857!5m2!1spt-BR!2sbr" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe class="mapa-fabrica" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.807346491085!2d-38.599167821587905!3d-3.829610717021844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c752764f0b16c3%3A0xaa130c34c3a0c798!2sR.%20Ant%C3%B4nio%20Chacon%2C%20281%20-%20Parque%20Pres.%20Vargas%2C%20Fortaleza%20-%20CE%2C%2060765-555!5e0!3m2!1spt-BR!2sbr!4v1721155975857!5m2!1spt-BR!2sbr"
+					width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</section>
 
 			<section class="beneficios">
-				<h3 class="titulo-principal">Benefícios</h3>
+				<h3 class="titulo-principal">Oferecemos</h3>
 
 				<div class="conteudo-beneficios">
 					<ul class="lista-beneficios">
-						<li class="itens">Atendimento aos Clientes</li>
-						<li class="itens">Espaço diferenciado</li>
-						<li class="itens">Localização</li>
-						<li class="itens">Profissionais Qualificados</li>
+						<li class="itens">O melhor atendimento ao Cliente</li>
+						<li class="itens">Espaço organizado</li>
+						<li class="itens">Produtos de qualidade</li>
+						<li class="itens">Profissionais qualificados</li>
 						<li class="itens">Pontualidade</li>
-						<li class="itens">Limpeza</li>
-					</ul><img src="beneficios.jpg" class="imagem-beneficios">
+						<li class="itens">Confiança</li>
+					</ul><img src="./public/imagem-de-fundo-4-fe.jpg" class="imagem-beneficios">
 				</div>
 
 				<div class="video">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class="video-wpp" width="100%" height="315" src="./public/WhatsApp Video 2024-07-17 at 15.00.11.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</section>
 		</main>
 
 		<footer>
-			<img src="logo-branco.png">
-			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+			<img class="logo-footer" src="./public/logo-fe.jpg">
+			<p class="copyright">&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> - 2024</p>
+			<p class="dev-paragrafo">feito por <a class="dev" href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F">Rodrigo Gabriel.</a></p>
 		</footer>
 	</body>
 </html>

@@ -1,0 +1,42 @@
+@media (max-width: 650px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: #d8d8d8;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        width: auto;
+    }
+
+    img.logo {
+        margin: 20px;
+    }
+
+    nav {
+        position: static;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    div.video {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe {
+        width: auto;
+    }
+
+}
