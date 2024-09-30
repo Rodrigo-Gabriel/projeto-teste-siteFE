@@ -146,7 +146,7 @@ td, th {
 
 
 /* css da página inicial */
-.imagens-de-demonstração {
+.imagens-de-demonstracao {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -222,8 +222,11 @@ td, th {
 }
 
 .conteudo-beneficios {
-	width: 640px;
-	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    gap: 20px;
 }
 
 .lista-beneficios {
@@ -245,19 +248,24 @@ td, th {
 }
 
 .imagem-beneficios {
-	width: 35%;
+	width: 30%;
 	opacity: 1;
 	transition: 400ms;
 	box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .imagem-beneficios:hover {
-	opacity: 0.3;
+	opacity: 20;
+	transform: scale(1.05);
 }
 
 .video {
-	width: 560px;
-	margin: 2em auto;
+	width: 45%;
+	margin: 10vh auto;
+}
+
+.video .video-wpp {
+	border: none;
 }
 
 footer {

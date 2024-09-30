@@ -1,42 +1,244 @@
-@media (max-width: 650px) {
-    * {
-        padding: 0;
-        margin: 0;
-    }
+* {
+    padding: 0;
+    margin: 0;
+}
 
-    body {
-        font-family: sans-serif;
-        background-color: #d8d8d8;
-    }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d8d8d8;
+    width: auto;
+}
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: auto;
-        width: auto;
-    }
+header {
+    background: #ffae00;
+    padding: 10px;
+    align-items: center;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
 
-    img.logo {
-        margin: 20px;
-    }
+.logo {
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px black;
+}
 
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px #ffffff;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    gap: 10px;
+}
+
+.produtos-img {
+    border: 1px solid rgb(185, 157, 2);
+    box-shadow: 0px 0px 25px black;
+    border-radius: 8px;
+    width: 300px;
+    height: 380px;
+}
+
+form {
+    margin: 40px 40px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%; /* Responsivo */
+}
+
+.enviar {
+    width: 100%; /* Responsivo */
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+.imagens-de-demonstracao {
+    display: flex;
+    flex-wrap: wrap; /* Responsivo */
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner {
+    margin-top: 30px;
+    width: 100%; /* Responsivo */
+    max-width: 300px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 80px rgb(0, 0, 0);
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2.3em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 100%; /* Responsivo */
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.principal .utensilios {
+    margin-top: 20px;
+    width: 100%; /* Responsivo */
+    max-width: 250px;
+    box-shadow: 0px 0px 50px black;
+    border: 1px solid #000000;
+    border-radius: 50px 3px 100px 3px;
+    align-items: center;
+}
+
+.mapa-conteudo {
+    display: flex;
+    flex-direction: column;
+
+    display: flex;
+    width: 70%;
+    height: 500px;
+}
+
+section.beneficios {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    gap: 20px;
+}
+
+iframe {
+    display: flex;
+    width: auto;
+}
+
+/* Media Queries - Responsividade */
+@media (max-width: 1024px) {
     nav {
         position: static;
         margin-right: 0;
         text-align: center;
     }
-
-    div.video {
-        display: flex;
+    
+    .logo {
+        margin-left: 0;
+    }
+    
+    .imagens-de-demonstracao {
         flex-direction: column;
+    }
+    
+    .principal {
+        width: 100%;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}
 
-        align-items: center;
-        justify-content: center;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 
-    iframe {
-        width: auto;
+    nav {
+        margin-top: 10px;
     }
 
+    .container {
+        padding: 0;
+    }
+    
+    .banner {
+        width: 100%;
+    }
+
+    .input-padrao {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    .produtos-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .principal .utensilios {
+        width: 100%;
+    }
+    
+    .imagens-de-demonstracaoo {
+        margin: 0;
+    }
 }
