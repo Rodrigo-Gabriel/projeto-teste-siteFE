@@ -6,10 +6,12 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #d8d8d8;
+	width: 100%;
 }
 
 header {
 	background: #ffae00;
+	box-shadow: 1px 1px 40px #000000;
 	padding: 10px;
 	align-items: center;
 	border-top: 2px solid #000000;
@@ -22,13 +24,6 @@ header {
 	border: 1px solid black;
 	box-shadow: 0px 0px 15px black;
 	margin-left: 30px;
-}
-
-.logo-footer {
-	width: 50px;
-	border-radius: 999px;
-	border: 1px solid black;
-	box-shadow: 0px 0px 10px rgb(249, 229, 0);
 }
 
 nav {
@@ -46,7 +41,7 @@ nav li {
 nav a {
 	text-transform: uppercase;
 	color: #000000;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 20px;
 	text-decoration: none;
 	margin-left: 10px;
@@ -56,16 +51,6 @@ nav a:hover {
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 20px#ffffff;
 	cursor: pointer;
-}
-
-.container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 10px;
-	padding: 15px;
-	gap: 10px;
 }
 
 .produtos-img {
@@ -163,6 +148,10 @@ td, th {
 	box-shadow: 0px 0px 80px rgb(0, 0, 0);
 }
 
+main {
+	width: 100%;
+}
+
 .titulo-principal {
 	text-align: center;
 	font-size: 2.3em;
@@ -235,6 +224,20 @@ td, th {
 	vertical-align: top;
 }
 
+li.itens{
+	font-family: sans-serif;
+	font-size: medium;
+	color: #000000;
+	transition: 0.2s;
+	background-color: 0px 0px 6px #d8d8d8;
+}
+li.itens:hover {
+	user-select: none;
+	cursor: pointer;
+
+	text-shadow: 0px 0px 6px #efe944;
+}
+
 .itens {
 	line-height: 1.5;
 }
@@ -245,6 +248,11 @@ td, th {
 
 .itens:before {
 	content: "🟊";
+	color: rgb(236, 161, 0);
+}
+
+.itens::after {
+	content: "!";
 }
 
 .imagem-beneficios {
@@ -270,7 +278,7 @@ td, th {
 
 footer {
 	text-align: center;
-	background: url("bg.jpg");
+	background: url(../public/bg.jpg);
 	padding: 40px 0;
 }
 
@@ -281,4 +289,11 @@ footer .dev-paragrafo {
 footer .dev {
 	color: #ffae00;
 	text-decoration: none;
+}
+
+.logo-footer {
+	width: 50px;
+	border-radius: 999px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 10px rgb(249, 229, 0);
 }
