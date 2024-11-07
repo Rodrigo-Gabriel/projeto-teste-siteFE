@@ -1,0 +1,68 @@
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar {
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 0;
+    }
+    
+    .banner {
+        width: 100%;
+    }
+
+    .input-padrao {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        background: #ffae00;
+        padding-bottom: 35px;
+        margin-bottom: 20px;
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid black;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-bar a {
+        font-size: 16px;
+    }
+
+    .produtos-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .principal .utensilios {
+        width: 100%;
+    }
+    
+    .imagens-de-demonstracaoo {
+        margin: 0;
+    }
+}
+
+.logo {
+	width: 100px;
+	border-radius: 999px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 15px black;
+	margin-left: 30px;
+    margin: auto;
+}
+
+ul {
+    margin-top: 20%;
+}

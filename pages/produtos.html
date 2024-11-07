@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg">
-		<title>Produtos FE-etiquetas</title>
-		
-		<!-- link do google fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+		<title>FE-etiquetas</title>
 
 		<link rel="stylesheet" href="../style/reset.css">
 		<link rel="stylesheet" href="../style/style.css">
-		<!-- CSS da pagina produtos -->
-		<link rel="stylesheet" href="../style/produtos.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<!-- CSS media query em um elemento de link -->
-		<link rel="stylesheet" href="../style/mediaQProdutos.css">
+		<link rel="stylesheet" media="(max-width: 800px)" href="../style/produtosMediaQ.css">
+
+		<link rel="stylesheet" href="../style/produtos.css">
 	</head>
 
 	<body>
-		<header class="logo-produtos">
+		<header class="header">
 			<img class="logo" src="../public/logo-fe.jpg">
 
 			<nav class="nav-bar">
@@ -34,7 +31,7 @@
 		<main>
 			<span class="frase-chamativa">Fique por dentro das nossas novidades!</span>
 
-			<div class="container-produtos-principal">
+			
 				<h1 class="titulo-produtos">Destaques do mês</h1>
 				<article class="produtos">
 					<figure class="figuras">
@@ -43,11 +40,10 @@
 						<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
 					</figure>
 					<p class="info">
-						Fique por dentro das nossas novidades!
+						As pecas que mais tiveram destaque no mes
 					</p>
-					</article>
-			</div>
-			<div class="container-produtos-principal"></div>
+				</article>
+			
 				<h1 class="titulo-produtos">Modinhas</h1>
 				<article class="produtos">
 					<figure>
@@ -58,8 +54,7 @@
 					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet nibh at diam accumsan volutpat a eu purus. Proin ac egestas nulla. Ut pulvinar mi vel ante auctor pharetra. Morbi ullamcorper diam ligula, vitae scelerisque neque suscipit in. Cras non dui arcu. Proin sit amet tempor tellus, in maximus massa. Mauris tellus tellus, sollicitudin id neque nec, gravida lacinia nunc. Vestibulum efficitur et est non scelerisque. Nulla facilisi. Ut ornare leo sapien, nec consectetur elit dapibus in. Cras blandit sit amet dui eget pulvinar.
 					Maecenas vel leo ultrices, bibendum risus non, convallis risus. Vivamus tincidunt tellus neque, sit amet aliquam eros elementum nec. Sed porttitor mollis lorem, sed varius tortor maximus at. Morbi tristique urna ut convallis sollicitudin. Mauris lobortis, quam id rutrum cursus, neque lectus bibendum nisi, in molestie metus velit vitae massa. Nullam efficitur nunc in nulla aliquet, quis fermentum est consequat. Nulla facilisi. Sed iaculis arcu at nunc convallis, non sodales nibh tempor. Quisque commodo ac justo quis sollicitudin. Duis ac elit sed purus hendrerit posuere sit amet pellentesque tortor.</p>
 				</article>
-			</div>
-			<div class="container-produtos-principal"></div>
+
 				<h1 class="titulo-produtos">Auto perfurantes</h1>
 				<article class="produtos">
 					<figure>
@@ -70,19 +65,28 @@
 					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet nibh at diam accumsan volutpat a eu purus. Proin ac egestas nulla. Ut pulvinar mi vel ante auctor pharetra. Morbi ullamcorper diam ligula, vitae scelerisque neque suscipit in. Cras non dui arcu. Proin sit amet tempor tellus, in maximus massa. Mauris tellus tellus, sollicitudin id neque nec, gravida lacinia nunc. Vestibulum efficitur et est non scelerisque. Nulla facilisi. Ut ornare leo sapien, nec consectetur elit dapibus in. Cras blandit sit amet dui eget pulvinar.
 					Maecenas vel leo ultrices, bibendum risus non, convallis risus. Vivamus tincidunt tellus neque, sit amet aliquam eros elementum nec. Sed porttitor mollis lorem, sed varius tortor maximus at. Morbi tristique urna ut convallis sollicitudin. Mauris lobortis, quam id rutrum cursus, neque lectus bibendum nisi, in molestie metus velit vitae massa. Nullam efficitur nunc in nulla aliquet, quis fermentum est consequat. Nulla facilisi. Sed iaculis arcu at nunc convallis, non sodales nibh tempor. Quisque commodo ac justo quis sollicitudin. Duis ac elit sed purus hendrerit posuere sit amet pellentesque tortor.</p>
 				</article>
-			</div>
 
-			<div class="container-produtos">
-				<img class="produtos-img" src="../public/imagem-peças-1.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-2.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-1.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-2.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-1.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-2.jpeg" alt="imagem das peças">
-				<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
-			</div>
+				<h1 class="titulo-produtos">Auto perfurantes</h1>
+				<article class="produtos">
+					<figure>
+						<img class="produtos-img" src="../public/imagem-peças-1.jpeg" alt="imagem das peças">
+						<img class="produtos-img" src="../public/imagem-peças-2.jpeg" alt="imagem das peças">
+						<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
+					</figure>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet nibh at diam accumsan volutpat a eu purus. Proin ac egestas nulla. Ut pulvinar mi vel ante auctor pharetra. Morbi ullamcorper diam ligula, vitae scelerisque neque suscipit in. Cras non dui arcu. Proin sit amet tempor tellus, in maximus massa. Mauris tellus tellus, sollicitudin id neque nec, gravida lacinia nunc. Vestibulum efficitur et est non scelerisque. Nulla facilisi. Ut ornare leo sapien, nec consectetur elit dapibus in. Cras blandit sit amet dui eget pulvinar.
+					Maecenas vel leo ultrices, bibendum risus non, convallis risus. Vivamus tincidunt tellus neque, sit amet aliquam eros elementum nec. Sed porttitor mollis lorem, sed varius tortor maximus at. Morbi tristique urna ut convallis sollicitudin. Mauris lobortis, quam id rutrum cursus, neque lectus bibendum nisi, in molestie metus velit vitae massa. Nullam efficitur nunc in nulla aliquet, quis fermentum est consequat. Nulla facilisi. Sed iaculis arcu at nunc convallis, non sodales nibh tempor. Quisque commodo ac justo quis sollicitudin. Duis ac elit sed purus hendrerit posuere sit amet pellentesque tortor.</p>
+				</article>
+
+				<h1 class="titulo-produtos">Auto perfurantes</h1>
+				<article class="produtos">
+					<figure>
+						<img class="produtos-img" src="../public/imagem-peças-1.jpeg" alt="imagem das peças">
+						<img class="produtos-img" src="../public/imagem-peças-2.jpeg" alt="imagem das peças">
+						<img class="produtos-img" src="../public/imagem-peças-3.jpeg" alt="imagem das peças">
+					</figure>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet nibh at diam accumsan volutpat a eu purus. Proin ac egestas nulla. Ut pulvinar mi vel ante auctor pharetra. Morbi ullamcorper diam ligula, vitae scelerisque neque suscipit in. Cras non dui arcu. Proin sit amet tempor tellus, in maximus massa. Mauris tellus tellus, sollicitudin id neque nec, gravida lacinia nunc. Vestibulum efficitur et est non scelerisque. Nulla facilisi. Ut ornare leo sapien, nec consectetur elit dapibus in. Cras blandit sit amet dui eget pulvinar.
+					Maecenas vel leo ultrices, bibendum risus non, convallis risus. Vivamus tincidunt tellus neque, sit amet aliquam eros elementum nec. Sed porttitor mollis lorem, sed varius tortor maximus at. Morbi tristique urna ut convallis sollicitudin. Mauris lobortis, quam id rutrum cursus, neque lectus bibendum nisi, in molestie metus velit vitae massa. Nullam efficitur nunc in nulla aliquet, quis fermentum est consequat. Nulla facilisi. Sed iaculis arcu at nunc convallis, non sodales nibh tempor. Quisque commodo ac justo quis sollicitudin. Duis ac elit sed purus hendrerit posuere sit amet pellentesque tortor.</p>
+				</article>
 		</main>
 
 		<footer>
