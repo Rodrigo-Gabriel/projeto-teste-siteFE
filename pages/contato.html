@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<title>Contatos  FE-etiquetas</title>
 
 		<link rel="stylesheet" href="../style/reset.css">
 		<link rel="stylesheet" href="../style/style.css">
+		<link rel="stylesheet" href="../style/contato.css">
 		<!-- CSS media query em um elemento de link -->
-		<link rel="stylesheet" media="(max-width: 800px)" href="./style/mediaQ.css" />
+		<link rel="stylesheet" media="(max-width: 800px)" href="../style/mediaQ.css" />
 	</head>
 
 	<body>
@@ -25,40 +27,40 @@
 		</header>
 
 		<main>
-			<form>
-				<label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomesobrenome" class="input-padrao" required>
+			<form id="form-contato">
+				<section class="section-1">
+						<span class="title">Contato</span>
+						<p>
+							Preencha o formulário ao lado,<br>
+							assim que possível entraremos<br>em contato.
+						</p>
+						<div class="links-container">
+							<a class="link-1" href="https://maps.app.goo.gl/G7VUHg2sAzKfWL1G6" target="_blank" rel="noopener noreferrer">R. Antônio Chacon, 281 - Parque Pres. Vargas
+								<br>Fortaleza - CE CEP: 60765-555</a>
+							<a class="link-2" href="http://" target="_blank" rel="noopener noreferrer">(85) 98894-2995</a>
+							<a class="link-3" href="http://" target="_blank" rel="noopener noreferrer">comercial@gmaria2018.com</a>
+						</div>
+				</section>
 
-				<label for="email">Email</label>
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+				<section class="section-2">
+					<div class="input-info">
+						<input type="text" id="nome" class="input-padrao" required placeholder="Nome">
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+						<input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
 
-				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+						<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-				<fieldset>
-					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-				</fieldset>
+						<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+					</div>
 
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
-				</fieldset>
+					<textarea cols="50" rows="10" id="mensagem" class="input-textarea" required placeholder="Digite sua mensagem aqui..." style="font-size: 17px; padding: 10px;" ></textarea>
+					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
-				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-
-				<input type="submit" value="Enviar formulário" class="enviar">
+					<div class="submit-contact">
+						<div class="g-recaptcha" data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"></div>
+						<input class="enviar" type="submit" value="Enviar formulário"></button>
+					</div>
+				</section>				
 			</form>
 
 			<table>
@@ -82,7 +84,7 @@
 		</main>
 
 		<footer>
-			<img src="logo-branco.png" alt="Logo da Fe-etiquetas">
+			<img class="logo-footer" src="../public/logo-fe.jpg">
 			<p class="copyright">&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> - 2024</p>
 			<p class="dev-paragrafo">feito por <a class="dev" href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F">Rodrigo Gabriel.</a></p>
 		</footer>

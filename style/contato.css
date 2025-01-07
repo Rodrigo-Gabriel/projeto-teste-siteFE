@@ -1,0 +1,117 @@
+a {
+    text-decoration: none;
+    color: #484545;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: fit-content;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 {
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    color: #484545;
+    padding: 10px;
+}
+
+.section-1 span.title{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0em;
+}
+
+.section-1 p {
+    font-size: 22px;
+    overflow-wrap: anywhere;
+    line-height: 20px;
+    word-spacing: 2px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.link-1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/*second section*/
+
+.section-2 {
+    color: purple;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de largura igual */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: auto;
+    height: 30px;
+}
+
+.input-textarea {
+    width: auto;
+    height: 150px;
+    resize: none;
+    border: 2px solid black;
+}
+
+.checkbox {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.submit-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.enviar {
+	width: auto;
+	padding: 15px;
+    margin-left: 10px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+.enviar:hover {
+	color: #e4e4e4;
+	background: darkorange;
+}
