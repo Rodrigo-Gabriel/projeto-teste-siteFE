@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg">
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>		
+
 		<title>Contatos  FE-etiquetas</title>
 
 		<link rel="stylesheet" href="../style/reset.css">
@@ -27,7 +29,7 @@
 		</header>
 
 		<main>
-			<form id="form-contato">
+			<form id="contact-form">
 				<section class="section-1">
 						<span class="title">Contato</span>
 						<p>
@@ -44,21 +46,21 @@
 
 				<section class="section-2">
 					<div class="input-info">
-						<input type="text" id="nome" class="input-padrao" required placeholder="Nome">
+						<input type="text" id="to_nome" class="input-padrao" required placeholder="Nome">
 
 						<input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
 
-						<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+						<input type="email" id="email" class="input-padrao" required placeholder="Seuemail@dominio.com">
 
 						<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 					</div>
 
-					<textarea cols="50" rows="10" id="mensagem" class="input-textarea" required placeholder="Digite sua mensagem aqui..." style="font-size: 17px; padding: 10px;" ></textarea>
+					<textarea cols="50" rows="10" id="message" class="input-textarea" required placeholder="Digite sua mensagem aqui..." style="font-size: 17px; padding: 10px;" ></textarea>
 					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
 					<div class="submit-contact">
 						<div class="g-recaptcha" data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"></div>
-						<input class="enviar" type="submit" value="Enviar formulário"></button>
+						<input class="enviar" id="submit" type="submit" value="Enviar formulário"></button>
 					</div>
 				</section>				
 			</form>
