@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg">
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>		
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg" />
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-		<title>Contatos  FE-etiquetas</title>
+		<title>Contatos FE-etiquetas</title>
 
-		<link rel="stylesheet" href="../style/reset.css">
-		<link rel="stylesheet" href="../style/style.css">
-		<link rel="stylesheet" href="../style/contato.css">
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/style.css" />
+		<link rel="stylesheet" href="../style/contato.css" />
+
 		<!-- CSS media query em um elemento de link -->
-		<link rel="stylesheet" media="(max-width: 800px)" href="../style/mediaQ.css" />
+		<link
+			rel="stylesheet"
+			media="(max-width: 800px)"
+			href="../style/mediaQ.css"
+		/>
+
 	</head>
 
 	<body>
 		<header>
-			<img class="logo" src="../public/logo-fe.jpg">
+			<img class="logo" src="../public/logo-fe.jpg" />
 
 			<nav class="nav-bar">
 				<ul>
@@ -29,41 +35,108 @@
 		</header>
 
 		<main>
-			<form id="contact-form">
+			
 				<section class="section-1">
-						<span class="title">Contato</span>
-						<p>
-							Preencha o formulário ao lado,<br>
-							assim que possível entraremos<br>em contato.
-						</p>
-						<div class="links-container">
-							<a class="link-1" href="https://maps.app.goo.gl/G7VUHg2sAzKfWL1G6" target="_blank" rel="noopener noreferrer">R. Antônio Chacon, 281 - Parque Pres. Vargas
-								<br>Fortaleza - CE CEP: 60765-555</a>
-							<a class="link-2" href="http://" target="_blank" rel="noopener noreferrer">(85) 98894-2995</a>
-							<a class="link-3" href="http://" target="_blank" rel="noopener noreferrer">comercial@gmaria2018.com</a>
-						</div>
+					<span class="title">Contato</span>
+
+					<!-- É boa prática manter somente os campos a serem preenchidos dentro do <form> viu -->
+
+					<p>
+						Preencha o formulário ao lado,<br />
+						assim que possível entraremos<br />em contato.
+					</p>
+					<div class="links-container">
+						<a
+							class="link-1"
+							href="https://maps.app.goo.gl/G7VUHg2sAzKfWL1G6"
+							target="_blank"
+							rel="noopener noreferrer"
+							>R. Antônio Chacon, 281 - Parque Pres. Vargas <br />Fortaleza - CE
+							CEP: 60765-555</a
+						>
+						<a
+							class="link-2"
+							href="http://"
+							target="_blank"
+							rel="noopener noreferrer"
+							>(85) 98894-2995</a
+						>
+						<a
+							class="link-3"
+							href="http://"
+							target="_blank"
+							rel="noopener noreferrer"
+							>comercial@gmaria2018.com</a
+						>
+					</div>
 				</section>
 
 				<section class="section-2">
 					<div class="input-info">
-						<input type="text" id="to_nome" class="input-padrao" required placeholder="Nome">
 
-						<input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
+						<!-- troquei o ID de "to_nome" para "name". Dependendo das variáveis que você puser no seu template, pode ir mudando. -->
+						<input
+							type="text"
+							id="name"
+							class="input-padrao"
+							required
+							placeholder="Nome"
+						/>
 
-						<input type="email" id="email" class="input-padrao" required placeholder="Seuemail@dominio.com">
+						<input
+							type="text"
+							id="sobrenome"
+							class="input-padrao"
+							required
+							placeholder="Sobrenome"
+						/>
 
-						<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+						<input
+							type="email"
+							id="email"
+							class="input-padrao"
+							required
+							placeholder="Seuemail@dominio.com"
+						/>
+
+						<input
+							type="tel"
+							id="telefone"
+							class="input-padrao"
+							required
+							placeholder="(XX) XXXXX-XXXX"
+						/>
 					</div>
 
-					<textarea cols="50" rows="10" id="message" class="input-textarea" required placeholder="Digite sua mensagem aqui..." style="font-size: 17px; padding: 10px;" ></textarea>
-					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+					<textarea
+						cols="50"
+						rows="10"
+						id="message"
+						class="input-textarea"
+						required
+						placeholder="Digite sua mensagem aqui..."
+						style="font-size: 17px; padding: 10px"
+					></textarea>
+					<label class="checkbox"
+						><input type="checkbox" checked />Gostaria de receber nossas
+						novidades por email?</label
+					>
 
 					<div class="submit-contact">
-						<div class="g-recaptcha" data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"></div>
-						<input class="enviar" id="submit" type="submit" value="Enviar formulário"></button>
+						<div
+							class="g-recaptcha"
+							data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"
+						></div>
+
+						<!-- Troquei o input que estáva aqui por um button para poder executar uma função com "onClick" -->
+
+						<button
+							class="enviar"
+							onclick="enviarEmail()" 
+						>Botão de Enviar</button>
 					</div>
-				</section>				
-			</form>
+				</section>
+			
 
 			<table>
 				<tr>
@@ -86,9 +159,34 @@
 		</main>
 
 		<footer>
-			<img class="logo-footer" src="../public/logo-fe.jpg">
-			<p class="copyright">&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> - 2024</p>
-			<p class="dev-paragrafo">feito por <a class="dev" href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F">Rodrigo Gabriel.</a></p>
+			<img class="logo-footer" src="../public/logo-fe.jpg" />
+			<p class="copyright">
+				&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> -
+				2024
+			</p>
+			<p class="dev-paragrafo">
+				feito por
+				<a
+					class="dev"
+					href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F"
+					>Rodrigo Gabriel.</a
+				>
+			</p>
 		</footer>
+
+		<!-- Aqui fica o script para "linkar" o EmailJS na aplicação -->
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: "PUBLIC_KEY", // Your aqui vc põe sua chave pública do EmailJS (tem lá no site)
+				});
+			})();
+		</script>
+		<script src="../contanto.js"></script>
 	</body>
 </html>
