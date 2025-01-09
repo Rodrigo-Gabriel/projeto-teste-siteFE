@@ -3,7 +3,7 @@ a {
     color: #484545;
 }
 
-form {
+.container-contatos {
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;

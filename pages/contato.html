@@ -36,6 +36,7 @@
 
 		<main>
 			
+			<div class="container-contatos">
 				<section class="section-1">
 					<span class="title">Contato</span>
 
@@ -128,15 +129,13 @@
 							data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"
 						></div>
 
-						<!-- Troquei o input que estáva aqui por um button para poder executar uma função com "onClick" -->
-
 						<button
 							class="enviar"
-							onclick="enviarEmail()" 
+							onclick="enviarMensagem()" 
 						>Botão de Enviar</button>
 					</div>
 				</section>
-			
+			</div>
 
 			<table>
 				<tr>
@@ -174,19 +173,9 @@
 			</p>
 		</footer>
 
-		<!-- Aqui fica o script para "linkar" o EmailJS na aplicação -->
+		<!-- Aqui fica o script para mandar a mensagem para o whatsapp na aplicação -->
 
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-		></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init({
-					publicKey: "PUBLIC_KEY", // Your aqui vc põe sua chave pública do EmailJS (tem lá no site)
-				});
-			})();
-		</script>
+		<script type="text/javascript"></script>
 		<script src="../contanto.js"></script>
 	</body>
 </html>
