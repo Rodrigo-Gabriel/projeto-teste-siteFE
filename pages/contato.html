@@ -35,7 +35,6 @@
 		</header>
 
 		<main>
-			
 			<div class="container-contatos">
 				<section class="section-1">
 					<span class="title">Contato</span>
@@ -53,108 +52,54 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							>R. Antônio Chacon, 281 - Parque Pres. Vargas <br />Fortaleza - CE
-							CEP: 60765-555</a
-						>
+							CEP: 60765-555</a>
 						<a
 							class="link-2"
-							href="http://"
+							href="https://wa.me/message/E5MIFRKHQRZMF1"
 							target="_blank"
 							rel="noopener noreferrer"
-							>(85) 98894-2995</a
-						>
+							>(85) 98894-2995</a>
 						<a
 							class="link-3"
 							href="http://"
 							target="_blank"
 							rel="noopener noreferrer"
-							>comercial@gmaria2018.com</a
-						>
+							>comercial@gmaria2018.com</a>
 					</div>
 				</section>
 
 				<section class="section-2">
-					<div class="input-info">
+					<form id="whatsappForm">
+						<article class="input-info" >
+							<input class="input-padrao" type="text" id="name" placeholder="Digite seu nome" required>
+					  
+							<input class="input-padrao" type="text" id="lastname" placeholder="Digite seu sobrenome" required>
 
-						<!-- troquei o ID de "to_nome" para "name". Dependendo das variáveis que você puser no seu template, pode ir mudando. -->
-						<input
-							type="text"
-							id="name"
-							class="input-padrao"
+							<input class="input-padrao" type="email" id="email" placeholder="Digite seu e-mail" required>
+
+							<input class="input-padrao" type="text" id="phone" placeholder="Digite seu telefone" required>
+						
+							<textarea
+							cols="50"
+							rows="10"
+							id="message"
+							class="input-textarea"
 							required
-							placeholder="Nome"
-						/>
-
-						<input
-							type="text"
-							id="sobrenome"
-							class="input-padrao"
+							placeholder="Digite sua mensagem aqui..."
+							style="font-size: 14px; padding: 10px"
 							required
-							placeholder="Sobrenome"
-						/>
-
-						<input
-							type="email"
-							id="email"
-							class="input-padrao"
-							required
-							placeholder="Seuemail@dominio.com"
-						/>
-
-						<input
-							type="tel"
-							id="telefone"
-							class="input-padrao"
-							required
-							placeholder="(XX) XXXXX-XXXX"
-						/>
-					</div>
-
-					<textarea
-						cols="50"
-						rows="10"
-						id="message"
-						class="input-textarea"
-						required
-						placeholder="Digite sua mensagem aqui..."
-						style="font-size: 17px; padding: 10px"
-					></textarea>
-					<label class="checkbox"
-						><input type="checkbox" checked />Gostaria de receber nossas
-						novidades por email?</label
-					>
-
-					<div class="submit-contact">
+							></textarea>
+						</article>
+					  
 						<div
 							class="g-recaptcha"
 							data-sitekey="COLE-SUA-CHAVE-DE-SITE-AQUI"
 						></div>
 
-						<button
-							class="enviar"
-							onclick="enviarMensagem()" 
-						>Botão de Enviar</button>
-					</div>
+						<button class="enviar" type="submit">Enviar para WhatsApp</button>
+					  </form>  
 				</section>
 			</div>
-
-			<table>
-				<tr>
-					<td>Dia</td>
-					<td>Horário</td>
-				</tr>
-				<tr>
-					<td>Segunda</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Quarta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Sexta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-			</table>
 		</main>
 
 		<footer>
@@ -174,8 +119,6 @@
 		</footer>
 
 		<!-- Aqui fica o script para mandar a mensagem para o whatsapp na aplicação -->
-
-		<script type="text/javascript"></script>
-		<script src="../contanto.js"></script>
+		   <script src="../contanto.js"></script>
 	</body>
 </html>

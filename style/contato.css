@@ -3,15 +3,21 @@ a {
     color: #484545;
 }
 
+main {
+    justify-items: center;
+}
+
 .container-contatos {
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
+    border-radius: 10px;
     padding: 15px;
-    margin: auto;
+    margin: 50px;
     margin-top: 50px;
-    max-width: fit-content;
-    height: auto;
+    margin-bottom: 50px;
+    width: min-content;
+    height: min-content;
 }
 
 section {
@@ -24,6 +30,7 @@ section {
     text-align: center;
     justify-content: space-around;
     font-weight: bold;
+    background-color: #ececec;
     color: #484545;
     padding: 10px;
 }
@@ -54,16 +61,13 @@ section {
 .link-1 {
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 10px;
 }
 
 /*second section*/
 
 .section-2 {
-    color: purple;
+    background-color: #e4e4e4;
     padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .input-info {
@@ -98,10 +102,17 @@ section {
     flex-direction: row;
 }
 
+.g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0 0;
+    display: inline-block;
+  }
+  
+
 .enviar {
 	width: auto;
 	padding: 15px;
-    margin-left: 10px;
+    margin-left: 0px;
 	background: orange;
 	color: white;
 	font-weight: bold;
