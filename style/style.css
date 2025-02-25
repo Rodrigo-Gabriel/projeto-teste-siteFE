@@ -22,7 +22,6 @@ header {
 	width: 100px;
 	border-radius: 999px;
 	border: 1px solid black;
-	box-shadow: 0px 0px 15px black;
 	margin-left: 30px;
 }
 
@@ -41,7 +40,7 @@ nav li {
 nav a {
 	text-transform: uppercase;
 	color: #000000;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 20px;
 	text-decoration: none;
 	margin-left: 10px;
@@ -108,8 +107,8 @@ td, th {
 	align-items: center;
 	align-content: center;
 	margin-top: 20px;
-	margin: 50px;
-	gap: 10px;
+	margin: 90px;
+	gap: 15px;
 }
 
 .banner {
@@ -123,11 +122,35 @@ main {
 	width: 100%;
 }
 
+@import url(./fontes/textoFontes.css);
+
 .titulo-principal {
 	text-align: center;
-	font-size: 2.3em;
-	margin: 0 0 1em;
+	font-family: "Ms Madi", serif;
+	font-weight: 100;
+	font-size: 110px;
+	margin: 0 0 0.5em;
 	clear: left;
+	color: black;
+	text-shadow: 0px 0px 20px gold;
+	animation: animaTitulo 5s infinite;
+}
+@keyframes animaTitulo {
+	10% {
+		text-shadow: 0px 0px 15px rgb(209, 178, 1);
+	}
+	30%{
+		text-shadow: 0px 0px 30px gold;
+	}
+	50% {
+		text-shadow: 0px 0px 15px rgb(209, 178, 1);
+	}
+	70% {
+		text-shadow: 0px 0px 30px gold;
+	}
+	100% {
+		text-shadow: 0px 0px 20px gold;
+	}
 }
 
 .principal {
@@ -138,6 +161,15 @@ main {
 	text-align: center;
 	align-items: center;
 	align-content: center;
+}
+
+.conteiner-textos {
+	margin: 50px;
+	margin-bottom: 50px;
+}
+.conteiner-textos p {
+	padding: 5px;
+	font-size: 16px;
 }
 
 .principal .utensilios {
@@ -169,6 +201,7 @@ main {
 .mapa-conteudo {
 	width: 940px;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .mapa p {
@@ -177,6 +210,10 @@ main {
 }
 
 .beneficios {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	padding: 3em 0;
 	background: #888888;
 }
@@ -193,6 +230,7 @@ main {
 	width: 40%;
 	display: inline-block;
 	vertical-align: top;
+	margin: 0px 0px 60px 0px;
 }
 
 li.itens{
@@ -204,26 +242,22 @@ li.itens{
 }
 li.itens:hover {
 	user-select: none;
-	cursor: pointer;
+	cursor: auto;
 
-	text-shadow: 0px 0px 6px #efe944;
+	text-shadow: 0px 0px 10px #efe944;
 }
 
 .itens {
 	line-height: 1.5;
+	text-transform: uppercase;
 }
 
 .itens:first-child {
 	font-weight: bold;
 }
 
-.itens:before {
-	content: "🟊";
-	color: rgb(236, 161, 0);
-}
-
 .itens::after {
-	content: "!";
+	content: ".";
 }
 
 .imagem-beneficios {
@@ -241,6 +275,8 @@ li.itens:hover {
 .video {
 	width: 45%;
 	margin: 10vh auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
 }
 
 .video .video-wpp {
