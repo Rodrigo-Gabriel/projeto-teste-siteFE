@@ -44,7 +44,7 @@ main {
 
 .content-frase-chamativa {
 	margin: 150px;
-	margin-bottom: 20vh;
+	margin-bottom: 250px;
 }
 .frase-chamativa {
 	font-family: "Ms Madi", serif;
@@ -57,20 +57,22 @@ main {
 .titulo-produtos {
 	display: flex;
 	flex-direction: column;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: "Ms Madi", serif;
 	text-align: center;
-	font-size: 50px;
-	line-height: 1.2;
+	font-size: 70px;
+	line-height: 1;
+	word-spacing: 5px;
 }
 .titulo-produtos::after {
     content: '';
     width: 100%;
-    max-width: 4rem;
+    max-width: 8rem;
+	border-radius: 4px;
     height: 0.4rem;
     background: #1e1f20;
     display: inline-block;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 80px auto;
 }
 
 article {
