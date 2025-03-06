@@ -2,6 +2,7 @@
     .header {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .nav-bar {
@@ -34,6 +35,10 @@
 
     .logo {
         margin-bottom: 10px;
+    }
+
+    .nav-bar {
+        top: 9%;
     }
 
     .nav-bar a {

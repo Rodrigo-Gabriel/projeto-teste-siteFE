@@ -116,6 +116,8 @@ td, th {
 	width: 300px;
 	border: 2px solid black;
 	box-shadow: 0px 0px 80px rgb(0, 0, 0);
+
+	animation: appear 0.3s linear;
 }
 
 main {
@@ -134,6 +136,10 @@ main {
 	color: black;
 	text-shadow: 0px 0px 20px gold;
 	animation: animaTitulo 5s infinite;
+
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 45%;
 }
 @keyframes animaTitulo {
 	10% {
@@ -202,6 +208,11 @@ main {
 	width: 940px;
 	margin: 0 auto;
 	margin-bottom: 50px;
+
+	
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0;
 }
 
 .mapa p {
@@ -303,4 +314,35 @@ footer .dev {
 	border-radius: 999px;
 	border: 1px solid black;
 	box-shadow: 0px 0px 10px rgb(249, 229, 0);
+}
+
+
+
+
+@keyframes appear {
+	from{
+		opacity: 0;
+		scale: 0.8;
+	}
+	to{
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes appearSide {
+	from{
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+#content-animacao {
+	animation: appearSide linear;
+	animation-timeline: view();
+	animation-range: entry 0;
 }
