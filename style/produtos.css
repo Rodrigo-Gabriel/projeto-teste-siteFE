@@ -44,7 +44,7 @@ main {
 
 .content-frase-chamativa {
 	margin: 150px;
-	margin-bottom: 250px;
+	margin-bottom: 350px;
 }
 .frase-chamativa {
 	font-family: "Ms Madi", serif;
@@ -63,6 +63,10 @@ main {
 	font-size: 70px;
 	line-height: 1;
 	word-spacing: 5px;
+
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 40%;
 }
 .titulo-produtos::after {
     content: '';
@@ -103,6 +107,10 @@ p.info {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 40%;
 }
 
 .produtos-img {

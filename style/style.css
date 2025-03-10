@@ -124,8 +124,6 @@ main {
 	width: 100%;
 }
 
-@import url(./fontes/textoFontes.css);
-
 .titulo-principal {
 	text-align: center;
 	font-family: "Ms Madi", serif;
@@ -136,27 +134,6 @@ main {
 	color: black;
 	text-shadow: 0px 0px 20px gold;
 	animation: animaTitulo 5s infinite;
-
-	animation: appear linear;
-	animation-timeline: view();
-	animation-range: entry 0% cover 45%;
-}
-@keyframes animaTitulo {
-	10% {
-		text-shadow: 0px 0px 15px rgb(209, 178, 1);
-	}
-	30%{
-		text-shadow: 0px 0px 30px gold;
-	}
-	50% {
-		text-shadow: 0px 0px 15px rgb(209, 178, 1);
-	}
-	70% {
-		text-shadow: 0px 0px 30px gold;
-	}
-	100% {
-		text-shadow: 0px 0px 20px gold;
-	}
 }
 
 .principal {
@@ -316,8 +293,26 @@ footer .dev {
 	box-shadow: 0px 0px 10px rgb(249, 229, 0);
 }
 
+/* animacoes */
+@import url(./fontes/textoFontes.css);
 
-
+@keyframes animaTitulo {
+	10% {
+		text-shadow: 0px 0px 15px rgb(209, 178, 1);
+	}
+	30%{
+		text-shadow: 0px 0px 30px gold;
+	}
+	50% {
+		text-shadow: 0px 0px 15px rgb(209, 178, 1);
+	}
+	70% {
+		text-shadow: 0px 0px 30px gold;
+	}
+	100% {
+		text-shadow: 0px 0px 20px gold;
+	}
+}
 
 @keyframes appear {
 	from{
