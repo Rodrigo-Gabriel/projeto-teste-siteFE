@@ -102,17 +102,10 @@ section {
     flex-direction: row;
 }
 
-.g-recaptcha {
-    transform: scale(0.9);
-    transform-origin: 0 0;
-    display: inline-block;
-  }
-  
-
 .enviar {
 	width: auto;
 	padding: 15px;
-    margin-left: 0px;
+    margin: 50px auto -10px auto;
 	background: orange;
 	color: white;
 	font-weight: bold;
