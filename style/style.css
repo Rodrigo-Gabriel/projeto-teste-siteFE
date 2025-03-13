@@ -1,3 +1,4 @@
+@import url(./fontes/textoFontes.css);
 * {
 	padding: 0;
 	margin: 0;
@@ -10,18 +11,17 @@ body {
 }
 
 header {
-	background: #ffae00;
+	background: #000000d1;
 	box-shadow: 1px 1px 40px #000000;
 	padding: 10px;
 	align-items: center;
-	border-top: 2px solid #000000;
-	border-bottom: 2px solid black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
 
 .logo {
 	width: 100px;
 	border-radius: 999px;
-	border: 1px solid black;
 	margin-left: 30px;
 }
 
@@ -39,7 +39,7 @@ nav li {
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
 	text-decoration: none;
@@ -101,23 +101,44 @@ td, th {
 
 
 /* css da página inicial */
-.imagens-de-demonstracao {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	margin-top: 20px;
-	margin: 90px;
-	gap: 15px;
-}
 
 .banner {
-	margin-top: 30px;
-	width: 300px;
-	border: 2px solid black;
-	box-shadow: 0px 0px 80px rgb(0, 0, 0);
+	position: relative;
+	width: 100%;
+	height: 85vh;
+	background: url('../public/img/img-fundo-peças.jpeg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	animation: appear 0.3s linear;
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0;
+}
+
+.banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-text {
+	position: relative;
+	color: white;
+	background-color: #000000b1;
+	padding: 5%;
+	font-size: 80px;
+	font-weight: bold;
+	max-width: 80%;
+}
+
+.banner-text h1 {
+	width: max-content;
+	font-family: "Ms Madi", serif;
 }
 
 main {
@@ -127,19 +148,17 @@ main {
 .titulo-principal {
 	text-align: center;
 	font-family: "Ms Madi", serif;
-	font-weight: 100;
-	font-size: 110px;
+	font-weight: 600;
+	font-size: 85px;
 	margin: 0 0 0.5em;
 	clear: left;
 	color: black;
-	text-shadow: 0px 0px 20px gold;
-	animation: animaTitulo 5s infinite;
 }
 
 .principal {
 	padding: 3em 0;
-	background: #FEFEFE;
 	width: 940px;
+	width: 50%;
 	margin: 0 auto;
 	text-align: center;
 	align-items: center;
@@ -152,15 +171,15 @@ main {
 }
 .conteiner-textos p {
 	padding: 5px;
-	font-size: 16px;
+	font-size: 25px;
+}
+.conteiner-textos strong {
+	font-size: 20px;
 }
 
 .principal .utensilios {
 	margin-top: 20px;
 	width: 250px;
-	box-shadow: 0px 0px 50px black;
-	border: 1px solid #000000;
-	border-radius: 50px 3px 100px 3px;
 	align-items: center;
 }
 
@@ -208,7 +227,7 @@ main {
 
 .conteudo-beneficios {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     margin-left: 0px;
     gap: 20px;
@@ -219,33 +238,6 @@ main {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0px 0px 60px 0px;
-}
-
-li.itens{
-	font-family: sans-serif;
-	font-size: medium;
-	color: #000000;
-	transition: 0.2s;
-	background-color: 0px 0px 6px #d8d8d8;
-}
-li.itens:hover {
-	user-select: none;
-	cursor: auto;
-
-	text-shadow: 0px 0px 10px #efe944;
-}
-
-.itens {
-	line-height: 1.5;
-	text-transform: uppercase;
-}
-
-.itens:first-child {
-	font-weight: bold;
-}
-
-.itens::after {
-	content: ".";
 }
 
 .imagem-beneficios {
@@ -339,5 +331,9 @@ footer .dev {
 #content-animacao {
 	animation: appearSide linear;
 	animation-timeline: view();
-	animation-range: entry 0;
+	animation-range: entry 0 cover 25%;
+}
+
+#animacao-aparicao {
+	animation: appear 0.3s linear;
 }

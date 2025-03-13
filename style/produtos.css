@@ -1,11 +1,12 @@
 @import url(./fontes/textoFontes.css);
 
 header {
-	background: #ffae00;
+	background: #000000d1;
+	box-shadow: 1px 1px 40px #000000;
 	padding: 10px;
 	align-items: center;
-	border-top: 2px solid #000000;
-	border-bottom: 2px solid black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav li {
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
 	text-decoration: none;
@@ -44,7 +45,7 @@ main {
 
 .content-frase-chamativa {
 	margin: 150px;
-	margin-bottom: 350px;
+	margin-bottom: 50px;
 }
 .frase-chamativa {
 	font-family: "Ms Madi", serif;
@@ -52,6 +53,16 @@ main {
   	font-style: normal;
 	font-size: 85px;
 	word-spacing: 10px;
+}
+@media (max-width: 480px) {
+    .frase-chamativa {
+        font-size: 60px;
+		word-spacing: 0px;
+    }
+	.content-frase-chamativa {
+		width: 100%;
+		margin-bottom: 420px;
+	}
 }
 
 .titulo-produtos {
@@ -97,7 +108,7 @@ article p {
 }
 
 p.info {
-	font-size: 22px;
+	font-size: 29px;
 	margin: 20%;
 	margin-bottom: 20vh;
 	margin-top: auto;
@@ -114,10 +125,10 @@ p.info {
 }
 
 .produtos-img {
-    width: 250px;
-    height: 300px;
+    width: 290px;
     transition: 0.3s;
-	border-radius: 10px;
+	border-radius: 4px;
+	border: none;
 }
 
 .produtos-img:hover {
@@ -130,7 +141,7 @@ p.info {
 }
 
 .figuras img {
-	margin: 3px;
+	margin: 5px;
 }
 
 .container-link {
@@ -139,6 +150,7 @@ p.info {
 	align-items: center;
 }
 .link-catalogo {
+	font-weight: 900;
 	font-size: 25px;
 }
 
@@ -149,7 +161,7 @@ button {
 	font-size: medium;
 	border: none;
 	border-radius: 4px;
-	background-color: #ffae00;
+	background-color: #000000;
 	box-shadow: 0px 0px 5px#000000;
 	transition: 0.5s;
 }
