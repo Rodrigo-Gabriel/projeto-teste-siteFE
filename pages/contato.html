@@ -1,130 +1,104 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg" />
-		<link rel="stylesheet" href="../style/botaoZap.css">
-		<script src="https://www.google.com/recaptcha/api.js"></script>
-		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-		<title>Contatos FE-etiquetas</title>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="imagex/jpg" href="../public/logo-fe.jpg" />
+	<link rel="stylesheet" href="../style/botaoZap.css">
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-		<link rel="stylesheet" href="../style/reset.css" />
-		<link rel="stylesheet" href="../style/style.css" />
-		<link rel="stylesheet" href="../style/contato.css" />
+	<title>Contatos FE-etiquetas</title>
 
-		<!-- CSS media query em um elemento de link -->
-		<link
-			rel="stylesheet"
-			media="(max-width: 800px)"
-			href="../style/mediaQ.css"
-		/>
+	<link rel="stylesheet" href="../style/reset.css" />
+	<link rel="stylesheet" href="../style/style.css" />
+	<link rel="stylesheet" href="../style/contato.css" />
 
-	</head>
+	<!-- CSS media query em um elemento de link -->
+	<link rel="stylesheet" media="(max-width: 800px)" href="../style/mediaQ.css" />
 
-	<body>
-		<header>
-			<img class="logo" src="../public/logo-fe.jpg" />
+</head>
 
-			<nav class="nav-bar">
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="../pages/produtos.html">Produtos</a></li>
-					<li><a href="../pages/contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</header>
+<body>
+	<header>
+		<img class="logo" src="../public/logo-fe.jpg" />
 
-		<main>
-			<div class="container-contatos">
-				<section class="section-1">
-					<span class="title">Contato</span>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../pages/produtos.html">Produtos</a></li>
+				<li><a href="../pages/contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
 
-					<!-- É boa prática manter somente os campos a serem preenchidos dentro do <form> viu -->
+	<main>
+		<div class="container-contatos">
+			<section class="section-1">
+				<span class="title">Contato</span>
 
-					<p>
-						Preencha o formulário ao lado,<br />
-						assim que possível entraremos<br />em contato.
-					</p>
-					<div class="links-container">
-						<a
-							class="link-1"
-							href="https://maps.app.goo.gl/G7VUHg2sAzKfWL1G6"
-							target="_blank"
-							rel="noopener noreferrer"
-							>R. Antônio Chacon, 281 - Parque Pres. Vargas <br />Fortaleza - CE
-							CEP: 60765-555</a>
-						<a
-							class="link-2"
-							href="https://wa.me/message/E5MIFRKHQRZMF1"
-							target="_blank"
-							rel="noopener noreferrer"
-							>(85) 98894-2995</a>
-						<a
-							class="link-3"
-							href="http://"
-							target="_blank"
-							rel="noopener noreferrer"
-							>comercial@gmaria2018.com</a>
-							<a
-							class="link-3"
-							href="http://www.instagram.com/fe_etiquetas_oficial/"
-							target="_blank"
-							rel="noopener noreferrer"
-							><img src="../public/img/icons8-instagram-48.png" alt="instagram-icon" width="40px"></a>
-					</div>
-				</section>
+				<!-- É boa prática manter somente os campos a serem preenchidos dentro do <form> viu -->
 
-				<section class="section-2">
-					<form id="whatsappForm">
-						<article class="input-info" >
-							<input class="input-padrao" type="text" id="name" placeholder="Digite seu nome" required>
-					  
-							<input class="input-padrao" type="text" id="lastname" placeholder="Digite seu sobrenome" required>
+				<p>
+					Preencha o formulário ao lado,<br />
+					assim que possível entraremos<br />em contato.
+				</p>
+				<div class="links-container">
+					<a class="link-1" href="https://maps.app.goo.gl/G7VUHg2sAzKfWL1G6" target="_blank"
+						rel="noopener noreferrer">R. Antônio Chacon, 281 - Parque Pres. Vargas <br />Fortaleza - CE
+						CEP: 60765-555</a>
+					<a class="link-2" href="https://wa.me/message/E5MIFRKHQRZMF1" target="_blank"
+						rel="noopener noreferrer">(85) 98894-2995</a>
+					<a class="link-3" href="http://" target="_blank"
+						rel="noopener noreferrer">comercial@gmaria2018.com</a>
+					<a class="link-3" href="http://www.instagram.com/fe_etiquetas_oficial/" target="_blank"
+						rel="noopener noreferrer"><img src="../public/img/icons8-instagram-48.png" alt="instagram-icon"
+							width="40px"></a>
+				</div>
+			</section>
 
-							<input class="input-padrao" type="email" id="email" placeholder="Digite seu e-mail" required>
+			<section class="section-2">
+				<form id="whatsappForm">
+					<article class="input-info">
+						<input class="input-padrao" type="text" id="name" placeholder="Digite seu nome" required>
 
-							<input class="input-padrao" type="text" id="phone" placeholder="Digite seu telefone" required>
-						
-							<textarea
-							cols="50"
-							rows="10"
-							id="message"
-							class="input-textarea"
-							required
-							placeholder="Digite sua mensagem aqui..."
-							style="font-size: 14px; padding: 10px"
-							required
-							></textarea>
-						</article>
+						<input class="input-padrao" type="text" id="lastname" placeholder="Digite seu sobrenome"
+							required>
 
-						<button class="enviar" type="submit">Enviar para WhatsApp</button>
-					  </form>  
-				</section>
-			</div>
+						<input class="input-padrao" type="email" id="email" placeholder="Digite seu e-mail" required>
 
-			<a href="https://wa.me/message/E5MIFRKHQRZMF1">
-				<img class="botao-zap" src="../public/whatsapp.png" alt="img botao whatsapp">
-			</a>
-		</main>
+						<input class="input-padrao" type="text" id="phone" placeholder="Digite seu telefone" required>
 
-		<footer>
-			<img class="logo-footer" src="../public/logo-fe.jpg" />
-			<p class="copyright">
-				&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> -
-				2024
-			</p>
-			<p class="dev-paragrafo">
-				feito por
-				<a
-					class="dev"
-					href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F"
-					>Rodrigo Gabriel.</a
-				>
-			</p>
-		</footer>
+						<textarea cols="50" rows="10" id="message" class="input-textarea" required
+							placeholder="Digite sua mensagem aqui..." style="font-size: 14px; padding: 10px"
+							required></textarea>
+					</article>
 
-		<!-- Aqui fica o script para mandar a mensagem para o whatsapp na aplicação -->
-		   <script src="../contanto.js"></script>
-	</body>
+					<button class="enviar" type="submit">Enviar para WhatsApp</button>
+				</form>
+			</section>
+		</div>
+
+		<a href="https://wa.me/message/E5MIFRKHQRZMF1">
+			<img class="botao-zap" src="../public/whatsapp.png" alt="img botao whatsapp">
+		</a>
+	</main>
+
+	<footer>
+		<img class="logo-footer" src="../public/logo-fe.jpg" />
+		<p class="copyright">
+			&copy; Copyright <span class="FE-ETIQUETAS-span">FE-ETIQUETAS</span> -
+			2024
+		</p>
+		<p class="dev-paragrafo">
+			feito por
+			<a class="dev" href="https://www.instagram.com/rodrigo_gabriel_programador/?next=%2F">Rodrigo Gabriel.</a>
+			<p class="dev-paragrafo" style="margin-top: 10px;">ultima autualização feita em 14/03/2025</p>
+		</p>
+	</footer>
+
+	<!-- Aqui fica o script para mandar a mensagem para o whatsapp na aplicação -->
+	<script src="../contanto.js"></script>
+</body>
+
 </html>
