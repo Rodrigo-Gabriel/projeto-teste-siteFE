@@ -10,18 +10,12 @@ body {
 }
 
 header {
-    background: #ffae00;
-    padding: 10px;
-    align-items: center;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    border: 1px solid black;
-    box-shadow: 0px 0px 15px black;
+	background: #000000d1;
+	box-shadow: 1px 1px 40px #000000;
+	padding: 10px;
+	align-items: center;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
 
 nav li {
@@ -31,7 +25,7 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: white;
     font-weight: 500;
     font-size: 20px;
     text-decoration: none;
@@ -52,6 +46,13 @@ nav a:hover {
     margin: 10px;
     padding: 15px;
     gap: 10px;
+}
+
+.conteiner-textos p {
+    font-size: 15px;
+}
+.conteiner-textos strong {
+    font-size: 13px;
 }
 
 .produtos-img {
@@ -117,9 +118,15 @@ td, th {
 .banner {
     margin-top: 30px;
     width: 100%; /* Responsivo */
-    max-width: 300px;
+    max-width: 100%;
     border: 2px solid black;
     box-shadow: 0px 0px 80px rgb(0, 0, 0);
+}
+
+.banner-text h1 {
+	display: flex;
+	width: fit-content;
+	font-family: "Ms Madi", serif;
 }
 
 .titulo-principal {
@@ -187,11 +194,7 @@ iframe {
     .logo {
         margin-left: 0;
     }
-    
-    .imagens-de-demonstracao {
-        flex-direction: column;
-    }
-    
+   
     .principal {
         width: 100%;
     }
