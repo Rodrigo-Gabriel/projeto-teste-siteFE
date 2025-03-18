@@ -65,6 +65,30 @@ main {
 	}
 }
 
+.artigo-moreInfo {
+	align-items: center;
+	text-align: center;
+	width: 40%;
+	margin: 30px;
+}
+
+.secao-texto-moreInfo h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.texto-moreInfo {
+	font-size: 16px;
+	width: 100%;
+	line-height: 22px;
+	margin: 10px;
+}
+
+.texto-moreInfo strong {
+	font-weight: bold;
+}
+
 .titulo-produtos {
 	display: flex;
 	flex-direction: column;
